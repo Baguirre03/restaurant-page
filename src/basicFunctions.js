@@ -27,3 +27,9 @@ const createButton = (text, parentClass, className) => {
 
     parent.appendChild(element)
 }
+
+export {
+    createMainContainer,
+    createChildren,
+    createButton
+}

@@ -1,3 +1,3 @@
-import {renderHomePage} from "./homePage"
+import { renderHomePage } from "./homePage";
 
 renderHomePage();
