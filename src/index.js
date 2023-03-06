@@ -1,8 +1,3 @@
-import {createMainContainer, createChildren} from "./MainContainer"
+import {renderHomePage} from "./homePage"
 
-
-createMainContainer()
-createChildren('content', '.main-container', 'child')
-createChildren('child class', '.child', 'child2')
-
-
+renderHomePage();
