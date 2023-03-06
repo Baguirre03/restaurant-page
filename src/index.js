@@ -1,5 +1,8 @@
-import {createContainer } from "./function"
+import {createMainContainer, createChildren} from "./MainContainer"
 
-createContainer('Div one')
-createContainer('div two')
-console.log('its watching')
+
+createMainContainer()
+createChildren('content', '.main-container', 'child')
+createChildren('child class', '.child', 'child2')
+
+
