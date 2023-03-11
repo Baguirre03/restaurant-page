@@ -1,8 +1,8 @@
-const createMainContainer = (text) => {
+const createMainContainer = (text, className) => {
     const body = document.querySelector('body')
 
     let element = document.createElement('div')
-    element.classList.add('main-container')
+    element.classList.add(className)
     element.textContent = text
 
     body.appendChild(element)
