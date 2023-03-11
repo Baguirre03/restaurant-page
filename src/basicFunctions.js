@@ -6,6 +6,8 @@ const createMainContainer = (text, className) => {
     element.textContent = text
 
     body.appendChild(element)
+
+    return element
 }
 
 const createChildren = (text, parentClass, className) => {
@@ -16,6 +18,8 @@ const createChildren = (text, parentClass, className) => {
     element.textContent = text
 
     parent.appendChild(element)
+
+    return element
 }
 
 const createButton = (text, parentClass, className) => {
@@ -26,6 +30,8 @@ const createButton = (text, parentClass, className) => {
     element.textContent = text
 
     parent.appendChild(element)
+
+    return element
 }
 
 export {
