@@ -14,9 +14,9 @@ const createHeader = () => {
 
   createChildren("", ".header", "button-holder");
 
-  createButton("button1", ".button-holder", "buttons");
-  createButton("button2", ".button-holder", "buttons");
-  createButton("button3", ".button-holder", "buttons");
+  createButton("Home", ".button-holder", "home");
+  createButton("Menu", ".button-holder", "menu");
+  createButton("Contact", ".button-holder", "contact");
 };
 
 export { createHeader };
