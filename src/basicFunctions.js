@@ -1,41 +1,41 @@
 const createMainContainer = (text, className) => {
-    const body = document.querySelector('body')
+  const body = document.querySelector("body");
 
-    let element = document.createElement('div')
-    element.classList.add(className)
-    element.textContent = text
+  const element = document.createElement("div");
+  element.classList.add(className);
+  element.textContent = text;
 
-    body.appendChild(element)
+  body.appendChild(element);
 
-    return element
-}
+  return element;
+};
 
 const createChildren = (text, parentClass, className) => {
-    const parent = document.querySelector(parentClass)
+  const parent = document.querySelector(parentClass);
 
-    let element = document.createElement('div')
-    element.classList.add(className)
-    element.textContent = text
+  const element = document.createElement("div");
+  element.classList.add(className);
+  element.textContent = text;
 
-    parent.appendChild(element)
+  parent.appendChild(element);
 
-    return element
-}
+  return element;
+};
 
 const createButton = (text, parentClass, className) => {
-    const parent = document.querySelector(parentClass)
+  const parent = document.querySelector(parentClass);
 
-    let element = document.createElement('button')
-    element.classList.add(className)
-    element.textContent = text
+  const element = document.createElement("button");
+  element.classList.add(className);
+  element.textContent = text;
 
-    parent.appendChild(element)
+  parent.appendChild(element);
 
-    return element
-}
+  return element;
+};
 
 export {
-    createMainContainer,
-    createChildren,
-    createButton
-}
+  createMainContainer,
+  createChildren,
+  createButton,
+};
