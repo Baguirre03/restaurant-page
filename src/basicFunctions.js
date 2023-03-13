@@ -1,3 +1,5 @@
+import { doc } from "prettier";
+
 const createMainContainer = (text, className) => {
   const body = document.querySelector("body");
 
@@ -35,9 +37,9 @@ const createButton = (text, parentClass, className) => {
 };
 
 const clearPage = () => {
-  const body = document.querySelector("body");
-  while (body.firstChild) {
-    body.removeChild(body.firstChild);
+  let removeMain = document.querySelector(".main-container");
+  while (removeMain.firstChild) {
+    removeMain.removeChild(removeMain.firstChild);
   }
 };
 
