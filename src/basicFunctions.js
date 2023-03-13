@@ -34,4 +34,11 @@ const createButton = (text, parentClass, className) => {
   return element;
 };
 
-export { createMainContainer, createChildren, createButton };
+const clearPage = () => {
+  const body = document.querySelector("body");
+  while (body.firstChild) {
+    body.removeChild(body.firstChild);
+  }
+};
+
+export { createMainContainer, createChildren, createButton, clearPage };

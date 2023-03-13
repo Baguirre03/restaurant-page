@@ -1,5 +1,7 @@
 import { doc } from "prettier";
 import { renderHomePage } from "./homePage";
+import { clearPage } from "./basicFunctions";
+import { createHeader } from "./header";
 import "./styles.css";
 
 renderHomePage();
@@ -9,13 +11,16 @@ const menu = document.querySelector(".menu");
 const contact = document.querySelector(".contact");
 
 home.addEventListener("click", () => {
-  console.log("helol");
+  clearPage();
+  createHeader();
 });
 
 menu.addEventListener("click", () => {
-  console.log("menu");
+  clearPage();
+  createHeader();
 });
 
 contact.addEventListener("click", () => {
-  console.log("contact");
+  clearPage();
+  createHeader();
 });
