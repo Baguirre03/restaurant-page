@@ -1,4 +1,4 @@
 import { renderHomePage } from "./homePage";
-import './styles.css'
+import "./styles.css";
 
 renderHomePage();

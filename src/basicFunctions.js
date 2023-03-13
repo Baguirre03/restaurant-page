@@ -34,8 +34,4 @@ const createButton = (text, parentClass, className) => {
   return element;
 };
 
-export {
-  createMainContainer,
-  createChildren,
-  createButton,
-};
+export { createMainContainer, createChildren, createButton };

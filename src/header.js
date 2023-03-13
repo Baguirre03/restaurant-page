@@ -1,7 +1,11 @@
-import { createMainContainer, createChildren, createButton } from "./basicFunctions";
+import {
+  createMainContainer,
+  createChildren,
+  createButton,
+} from "./basicFunctions";
 
 const createHeader = () => {
-// HTML class main-container on page
+  // HTML class main-container on page
   createMainContainer("", "header-container");
 
   // syntax: createBlank(text, parentClass, className)
