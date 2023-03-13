@@ -21,7 +21,7 @@ const renderHomePage = () => {
   );
 
   createChildren("Location", ".second-container", "location");
-  createChildren("6000 west drive, Dallas, TX", ".location", "location-text");
+  createChildren("6000 West drive, Dallas, TX", ".location", "location-text");
 };
 
 export { renderHomePage };
