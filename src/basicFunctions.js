@@ -66,7 +66,7 @@ const createInput = (id, parentClass) => {
   const parent = document.querySelector(parentClass);
   const input = document.createElement("input");
   parent.appendChild(input);
-  input.attributes("id", id);
+  input.setAttribute("id", id);
 };
 
 export {
@@ -75,4 +75,5 @@ export {
   createButton,
   clearPage,
   createFoodItem,
+  createInput,
 };
