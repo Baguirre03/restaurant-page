@@ -39,12 +39,15 @@ const clearPage = () => {
   while (removeMain.firstChild) {
     removeMain.removeChild(removeMain.firstChild);
   }
+  removeMain.remove();
 };
 
-const createFoodItem = (name, description) => {
-  const mainContainer = document.querySelector(".main-container");
+const createFoodItem = (name, foodDescription, parentClass) => {
   const foodContainer = document.createElement("div");
-  mainContainer.appendChild(foodContainer);
+  foodContainer.classList.add("food-container");
+
+  const parent = document.querySelector(parentClass);
+  parent.appendChild(foodContainer);
 
   const food = document.createElement("div");
   food.classList.add("food-name");
@@ -52,10 +55,11 @@ const createFoodItem = (name, description) => {
 
   foodContainer.appendChild(food);
 
-  const description = document.createElement("div");
-  description.classList.add("food-description");
+  const foodDesc = document.createElement("div");
+  foodDesc.classList.add("food-description");
+  foodDesc.textContent = foodDescription;
 
-  foodContainer.appendChild(description);
+  foodContainer.appendChild(foodDesc);
 };
 
 export {

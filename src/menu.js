@@ -1,14 +1,14 @@
-import { createFoodItem } from "./basicFunctions";
+import { createFoodItem, createMainContainer } from "./basicFunctions";
 
-// syntax: createBlank(text, parentClass, className)
+// syntax: createBlank(Title Name, Description, parentClass)
 const createMenu = () => {
   createMainContainer("", "main-container");
-
-  createChildren("First Item", ".main-container", "first");
-  createChildren("Food here", ".first", "food-name");
-
-  createChildren("Second Item", ".main-container", "second");
-  createChildren("Food HERE", ".second", "food-name");
+  createFoodItem("Food 1", "This is a description", ".main-container");
+  createFoodItem("Food 1", "This is a description", ".main-container");
+  createFoodItem("Food 1", "This is a description", ".main-container");
+  createFoodItem("Food 1", "This is a description", ".main-container");
+  createFoodItem("Food 1", "This is a description", ".main-container");
+  createFoodItem("Food 1", "This is a description", ".main-container");
 };
 
 export default createMenu;

@@ -1,8 +1,8 @@
-import { renderHomePage } from "./homePage";
 import { clearPage } from "./basicFunctions";
-import { createHeader } from "./header";
-import { createMenu } from "./menu";
-import { renderContact } from "./contact";
+import createHeader from "./header";
+import createMenu from "./menu";
+import renderHomePage from "./homePage";
+import renderContact from "./contact";
 import "./styles.css";
 
 createHeader();

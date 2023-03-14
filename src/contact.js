@@ -1,7 +1,7 @@
 import { createMainContainer, createChildren } from "./basicFunctions";
 
 const renderContact = () => {
-  createMainContainer("", ".main-container");
+  createMainContainer("", "main-container");
 
   createChildren("Contact:", ".main-container", ".contact");
 };
