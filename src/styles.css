@@ -1,0 +1,34 @@
+* {
+  --lightestGrey: #dad7cd;
+  --lightGreen: #a3b18a;
+  --mediumGreen: #588157;
+  --forest: #588157;
+  --darkGreen: #344e41;
+}
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.header-container {
+  background-color: var(--lightGreen);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.name {
+  font-size: 2rem;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--lightestGrey);
+}
