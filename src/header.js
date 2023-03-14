@@ -19,4 +19,4 @@ const createHeader = () => {
   createButton("Contact", ".button-holder", "contact");
 };
 
-export { createHeader };
+export default createHeader;

@@ -11,4 +11,4 @@ const createMenu = () => {
   createChildren("Food HERE", ".second", "food-name");
 };
 
-export { createMenu };
+export default createMenu;

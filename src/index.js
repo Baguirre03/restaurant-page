@@ -1,4 +1,3 @@
-import { doc } from "prettier";
 import { renderHomePage } from "./homePage";
 import { clearPage } from "./basicFunctions";
 import { createHeader } from "./header";
