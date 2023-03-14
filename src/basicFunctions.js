@@ -1,5 +1,3 @@
-import { doc } from "prettier";
-
 const createMainContainer = (text, className) => {
   const body = document.querySelector("body");
 
@@ -43,4 +41,27 @@ const clearPage = () => {
   }
 };
 
-export { createMainContainer, createChildren, createButton, clearPage };
+const createFoodItem = (name, description) => {
+  const mainContainer = document.querySelector(".main-container");
+  const foodContainer = document.createElement("div");
+  mainContainer.appendChild(foodContainer);
+
+  const food = document.createElement("div");
+  food.classList.add("food-name");
+  food.textContent = name;
+
+  foodContainer.appendChild(food);
+
+  const description = document.createElement("div");
+  description.classList.add("food-description");
+
+  foodContainer.appendChild(description);
+};
+
+export {
+  createMainContainer,
+  createChildren,
+  createButton,
+  clearPage,
+  createFoodItem,
+};

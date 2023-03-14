@@ -1,4 +1,4 @@
-import { createChildren, createMainContainer } from "./basicFunctions";
+import { createFoodItem } from "./basicFunctions";
 
 // syntax: createBlank(text, parentClass, className)
 const createMenu = () => {
