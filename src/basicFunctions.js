@@ -22,6 +22,16 @@ const createChildren = (text, parentClass, className) => {
   return element;
 };
 
+const createImg = (imageSource, parentClass, className) => {
+  const image = document.createElement("img");
+  image.src = imageSource;
+  image.classList.add(className);
+
+  const parent = document.querySelector(parentClass);
+
+  parent.appendChild(image);
+};
+
 const createButton = (text, parentClass, className) => {
   const parent = document.querySelector(parentClass);
 
@@ -76,4 +86,5 @@ export {
   clearPage,
   createFoodItem,
   createInput,
+  createImg,
 };

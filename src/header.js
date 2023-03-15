@@ -2,6 +2,7 @@ import {
   createMainContainer,
   createChildren,
   createButton,
+  createImg,
 } from "./basicFunctions";
 
 const createHeader = () => {

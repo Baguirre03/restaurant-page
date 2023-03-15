@@ -1,4 +1,8 @@
-import { createChildren, createMainContainer } from "./basicFunctions";
+import {
+  createChildren,
+  createMainContainer,
+  createImg,
+} from "./basicFunctions";
 
 // syntax: createBlank(text, parentClass, className)
 const renderHomePage = () => {
