@@ -43,8 +43,8 @@ body {
 
 .coffeeLogo {
   padding-top: 3px;
-  height: 2.2rem;
-  width: 3rem;
+  height: 2.5rem;
+  width: 3.2rem;
 }
 
 button {
@@ -52,7 +52,6 @@ button {
   background-color: var(--forest);
   border: none;
   border-bottom: black 3px double;
-  /* box-shadow: 3px 3px 5px var(--darkGreen); */
   font-size: 1.3rem;
   font-family: "Tilt Warp";
 }
@@ -75,9 +74,20 @@ button:hover {
   gap: 2rem;
 }
 
+.home-container {
+  background-image: url(/src/imgs/background-home-page.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.second-main {
+  background: rgba(0, 0, 0, 0.5);
+}
+
 .about-container {
   display: flex;
   flex-direction: column;
+  color: white;
 }
 
 .about-header {
