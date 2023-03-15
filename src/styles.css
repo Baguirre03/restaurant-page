@@ -14,7 +14,8 @@ body {
 }
 
 .header-container {
-  background-color: var(--lightGreen);
+  background-color: var(--forest);
+  padding: 20px;
 }
 
 .header {
@@ -22,23 +23,40 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 20px;
+}
+
+.button-holder {
+  display: flex;
+  gap: 20px;
 }
 
 .name {
   font-size: 2rem;
 }
 
+button {
+  padding: 10px 30px 10px 30px;
+  background-color: var(--forest);
+  border: none;
+  /* border-bottom: var(--lightestGrey) 2px solid; */
+  font-size: 1.3rem;
+}
+
+button:hover {
+  color: #dad7cd;
+}
+
 .main-container {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  align-items: center;
   background-color: var(--lightestGrey);
+  padding: 20px;
+  gap: 2rem;
 }
 
-.about {
+.about-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
