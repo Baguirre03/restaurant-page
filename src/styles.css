@@ -76,3 +76,7 @@ button:hover {
 .location-header {
   font-family: "Anton", sans-serif;
 }
+
+.highlight {
+  color: var(--lightGreen);
+}

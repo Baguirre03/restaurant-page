@@ -79,6 +79,16 @@ const createInput = (id, parentClass) => {
   input.setAttribute("id", id);
 };
 
+const colorButton = (button, other, other2) => {
+  const highlight = document.querySelector(button);
+  const remove = document.querySelector(other);
+  const remove2 = document.querySelector(other2);
+
+  highlight.classList.add("highlight");
+  remove.classList.remove("highlight");
+  remove2.classList.remove("highlight");
+};
+
 export {
   createMainContainer,
   createChildren,
@@ -87,4 +97,5 @@ export {
   createFoodItem,
   createInput,
   createImg,
+  colorButton,
 };
