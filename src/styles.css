@@ -34,7 +34,7 @@ body {
 }
 
 .name {
-  font-size: 2rem;
+  font-size: 2.3rem;
   font-family: "Tilt Warp";
 }
 
@@ -42,12 +42,18 @@ button {
   padding: 10px 30px 10px 30px;
   background-color: var(--forest);
   border: none;
-  border-bottom: var(--darkGreen) 2px double;
+  border-bottom: var(--darkGreen) 1px solid;
+  box-shadow: 3px 3px 5px var(--darkGreen);
   font-size: 1.3rem;
   font-family: "Tilt Warp";
 }
 
 button:hover {
+  color: #dad7cd;
+  transition: 0.3s;
+}
+
+.highlight {
   color: #dad7cd;
 }
 
@@ -75,8 +81,4 @@ button:hover {
 
 .location-header {
   font-family: "Anton", sans-serif;
-}
-
-.highlight {
-  color: var(--lightGreen);
 }
