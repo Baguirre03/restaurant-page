@@ -78,11 +78,30 @@ const createFoodItem = (name, foodDescription, parentClass, imageLink) => {
   foodContainer.appendChild(foodDesc);
 };
 
+const createForm = (id, parentClass, className) => {
+  const form = document.createElement("form");
+  const parent = document.querySelector(parentClass);
+  form.setAttribute("id", id);
+  form.classList.add(className);
+  parent.appendChild(form);
+};
+
 const createInput = (id, parentClass) => {
   const parent = document.querySelector(parentClass);
   const input = document.createElement("input");
   parent.appendChild(input);
   input.setAttribute("id", id);
+};
+
+const createLabel = (text, id, parentClass, forName) => {
+  const parent = document.querySelector(parentClass);
+  const label = document.createElement("label");
+
+  label.textContent = text;
+  label.setAttribute("id", id);
+  label.setAttribute("for", forName);
+
+  parent.appendChild(label);
 };
 
 const colorButton = (button, other, other2) => {
@@ -104,4 +123,6 @@ export {
   createInput,
   createImg,
   colorButton,
+  createForm,
+  createLabel,
 };
