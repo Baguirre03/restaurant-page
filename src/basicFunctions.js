@@ -52,7 +52,7 @@ const clearPage = () => {
   removeMain.remove();
 };
 
-const createFoodItem = (name, foodDescription, parentClass) => {
+const createFoodItem = (name, foodDescription, parentClass, imageLink) => {
   const foodContainer = document.createElement("div");
   foodContainer.classList.add("food-container");
 
@@ -64,6 +64,12 @@ const createFoodItem = (name, foodDescription, parentClass) => {
   food.textContent = name;
 
   foodContainer.appendChild(food);
+
+  const foodImage = document.createElement("img");
+  foodImage.src = imageLink;
+  foodImage.classList.add("food-image");
+
+  foodContainer.appendChild(foodImage);
 
   const foodDesc = document.createElement("div");
   foodDesc.classList.add("food-description");

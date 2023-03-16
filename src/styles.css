@@ -73,6 +73,8 @@ button:hover {
   gap: 2rem;
 }
 
+/* HomePage CSS */
+
 .home-container {
   background-image: url(/src/imgs/background-home-page.jpg);
   background-size: cover;
@@ -134,6 +136,33 @@ button:hover {
 
 .location-text {
   font-size: 1.2rem;
+}
+
+/* HomePage END */
+
+/* Menu Begin */
+.menu-holder {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2rem;
+  gap: 20px;
+  flex-grow: 1;
+}
+
+.food-container {
+  display: flex;
+  flex-direction: column;
+  border: black 2px solid;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.food-name {
+  font-family: "Tilt Warp";
+}
+
+.food-image {
+  width: 4rem;
 }
 
 @media screen and (max-width: 560px) {
