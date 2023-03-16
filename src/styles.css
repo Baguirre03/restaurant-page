@@ -147,6 +147,7 @@ button:hover {
   padding: 2rem;
   gap: 20px;
   flex-grow: 1;
+  align-self: center;
 }
 
 .food-container {
@@ -155,6 +156,9 @@ button:hover {
   border: black 2px solid;
   align-items: center;
   justify-content: space-between;
+  padding: 30px;
+  height: 30vh;
+  width: 30vw;
 }
 
 .food-name {
@@ -162,7 +166,8 @@ button:hover {
 }
 
 .food-image {
-  width: 4rem;
+  width: 20vw;
+  height: 20vh;
 }
 
 @media screen and (max-width: 560px) {
