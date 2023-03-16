@@ -21,13 +21,13 @@ const renderContact = () => {
 
   createForm("", ".contact-holder", "form");
 
-  createInput("first-name", ".form", "First Name: ");
+  createInput("first-name", ".form", "First Name: ", "first-name-holder");
 
-  createInput("last-name", ".form", "Last Name: ");
+  createInput("last-name", ".form", "Last Name: ", "last-name-holder");
 
-  createInput("email", ".form", "Email: ");
+  createInput("email", ".form", "Email: ", "email-holder");
 
-  createInput("message", ".form", "Message: ");
+  createInput("message", ".form", "Message: ", "message-holder");
 };
 
 export default renderContact;

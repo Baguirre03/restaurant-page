@@ -201,15 +201,11 @@ button:hover {
 
 form {
   display: grid;
+  grid-template-columns: 1fr 1fr;
   width: 50vw;
   border: black 2px solid;
   padding: 2vw;
   gap: 3vh;
-}
-
-input,
-label {
-  display: block;
 }
 
 @media screen and (max-width: 560px) {

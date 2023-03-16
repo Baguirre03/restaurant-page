@@ -86,10 +86,11 @@ const createForm = (id, parentClass, className) => {
   parent.appendChild(form);
 };
 
-const createInput = (id, parentClass, labelText) => {
+const createInput = (id, parentClass, labelText, bigId) => {
   const parent = document.querySelector(parentClass);
   const newDiv = document.createElement("div");
   newDiv.classList.add("form-input");
+  newDiv.setAttribute("id", bigId);
   parent.appendChild(newDiv);
 
   const label = document.createElement("label");
