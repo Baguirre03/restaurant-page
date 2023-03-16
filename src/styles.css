@@ -183,11 +183,26 @@ button:hover {
 
 /* Contact Begin */
 
+.contact-container {
+  padding: 0;
+  background-image: url(/src/imgs/jason-leem.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
 .contact-holder {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  background-color: var(--lightestGrey);
+  width: min-content;
+  align-self: center;
+  margin-top: 5vh;
+  padding: 4vh;
+  height: 60vh;
+  border: var(--forest) 2px solid;
+  box-shadow: 10px 10px 10px black;
 }
 
 .contact-header {
@@ -202,12 +217,16 @@ button:hover {
 form {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  width: 50vw;
-  height: max-content;
+  grid-template-rows: 1fr 1fr 3fr;
+  column-gap: 20px;
+  width: 30vw;
+  height: 100%;
   border: black 2px solid;
-  padding: 2vw;
-  gap: 3vh;
+  background-color: var(--lightGreen);
+  padding: 2vh;
+  border-radius: 1vh;
+  font-size: 1rem;
+  font-family: "Tilt Warp";
 }
 
 .form-input {
@@ -216,10 +235,14 @@ form {
 }
 input {
   width: 100%;
+  border-radius: 1vh;
 }
 
 #message {
   height: 100%;
+}
+
+#email {
 }
 
 #email-holder {
