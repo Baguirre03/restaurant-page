@@ -14,7 +14,7 @@ const renderHomePage = () => {
   createChildren("", ".second-main", "about-container");
   createChildren("About", ".about-container", "about-header");
   createChildren(
-    "Welcome to our coffee shop, where we believe that every cup of coffee should be an experience to remember. Located in the heart of the city, our coffee shop is the perfect spot to unwind and relax, catch up with friends or get some work done. We pride ourselves on providing the highest quality coffee, sourced from the finest roasters around the world.Located in the heart of the city, our coffee shop is the perfect spot to unwind and relax, catch up with friends or get some work done. We pride ourselves on providing the highest quality coffee, sourced from the finest roasters around the world.",
+    "Welcome to our coffee shop, where we believe that every cup of coffee should be an experience to remember. Located in the heart of the city, our coffee shop is the perfect spot to unwind and relax, catch up with friends or get some work done. We pride ourselves on providing the highest quality coffee, sourced from the finest roasters around the world.Located in the heart of the city, our coffee shop is the perfect spot to unwind and relax, catch up with friends or get some work done.",
     ".about-container",
     "about-text"
   );
@@ -30,7 +30,7 @@ const renderHomePage = () => {
   createChildren("", ".second-main", "location-container");
   createChildren("Location", ".location-container", "location-header");
   createChildren(
-    "6000 West drive, Dallas, TX",
+    "5298 West Loop Drive, Dallas, TX, 75214",
     ".location-container",
     "location-text"
   );
