@@ -7,8 +7,7 @@ import {
 } from "./basicFunctions";
 
 //syntax: (Text, parentClass, className)
-//input: (id, parentClass)
-//Label: (text, id, parentClass, forName)
+//input: (id, parentClass, LabelText)
 const renderContact = () => {
   createMainContainer("", "main-container");
 
@@ -22,17 +21,13 @@ const renderContact = () => {
 
   createForm("", ".contact-holder", "form");
 
-  createLabel("First Name: ", "first", ".form", "first-name");
-  createInput("first-name", ".form");
+  createInput("first-name", ".form", "First Name: ");
 
-  createLabel("Last Name: : ", "last", ".form", "last-name");
-  createInput("last-name", ".form");
+  createInput("last-name", ".form", "Last Name: ");
 
-  createLabel("Email: ", "email", ".form", "email");
-  createInput("email", ".form");
+  createInput("email", ".form", "Email: ");
 
-  createLabel("Message: ", "message", ".form", "message");
-  createInput("message", ".form");
+  createInput("message", ".form", "Message: ");
 };
 
 export default renderContact;

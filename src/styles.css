@@ -203,6 +203,8 @@ form {
   display: grid;
   width: 50vw;
   border: black 2px solid;
+  padding: 2vw;
+  gap: 3vh;
 }
 
 input,

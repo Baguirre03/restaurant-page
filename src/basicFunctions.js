@@ -86,22 +86,20 @@ const createForm = (id, parentClass, className) => {
   parent.appendChild(form);
 };
 
-const createInput = (id, parentClass) => {
+const createInput = (id, parentClass, labelText) => {
   const parent = document.querySelector(parentClass);
-  const input = document.createElement("input");
-  parent.appendChild(input);
-  input.setAttribute("id", id);
-};
+  const newDiv = document.createElement("div");
+  newDiv.classList.add("form-input");
+  parent.appendChild(newDiv);
 
-const createLabel = (text, id, parentClass, forName) => {
-  const parent = document.querySelector(parentClass);
   const label = document.createElement("label");
+  label.setAttribute("for", id);
+  label.textContent = labelText;
+  newDiv.appendChild(label);
 
-  label.textContent = text;
-  label.setAttribute("id", id);
-  label.setAttribute("for", forName);
-
-  parent.appendChild(label);
+  const input = document.createElement("input");
+  newDiv.appendChild(input);
+  input.setAttribute("id", id);
 };
 
 const colorButton = (button, other, other2) => {
@@ -124,5 +122,4 @@ export {
   createImg,
   colorButton,
   createForm,
-  createLabel,
 };
