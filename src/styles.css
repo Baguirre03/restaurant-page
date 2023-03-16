@@ -202,10 +202,32 @@ button:hover {
 form {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   width: 50vw;
+  height: max-content;
   border: black 2px solid;
   padding: 2vw;
   gap: 3vh;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+}
+input {
+  width: 100%;
+}
+
+#message {
+  height: 100%;
+}
+
+#email-holder {
+  grid-column: span 2;
+}
+
+#message-holder {
+  grid-column: span 2;
 }
 
 @media screen and (max-width: 560px) {
