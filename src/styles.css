@@ -68,7 +68,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  background-color: var(--lightestGrey);
+  background-color: var(--lightGreen);
   padding: 20px;
   gap: 2rem;
 }
@@ -157,17 +157,24 @@ button:hover {
   align-items: center;
   justify-content: space-between;
   padding: 30px;
-  height: 30vh;
-  width: 30vw;
+  height: 40vh;
+  width: 35vw;
+  gap: 5px;
+  background-color: var(--lightestGrey);
 }
 
 .food-name {
   font-family: "Tilt Warp";
+  font-size: 1.5rem;
 }
 
 .food-image {
   width: 20vw;
   height: 20vh;
+}
+
+.food-description {
+  font-size: 1.1rem;
 }
 
 @media screen and (max-width: 560px) {
