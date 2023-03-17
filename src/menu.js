@@ -4,6 +4,13 @@ import {
   createMainContainer,
 } from "./basicFunctions";
 
+import "./imgs/espresso2.png";
+import "./imgs/cap.png";
+import "./imgs/latte.png";
+import "./imgs/machiatto.png";
+import "./imgs/mocha.png";
+import "./imgs/americano.png";
+
 // syntax: createBlank(Title Name, Description, parentClass)
 const createMenu = () => {
   createMainContainer("", "main-container");
