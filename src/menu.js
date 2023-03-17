@@ -43,7 +43,7 @@ const createMenu = () => {
     "Mocha",
     "A coffee drink made with espresso, steamed milk, chocolate syrup or powder, and whipped cream on top. It has a rich and indulgent flavor with a hint of chocolate.",
     ".menu-holder",
-    "../imgs/mocha.png"
+    "../src/imgs/mocha.png"
   );
 };
 
