@@ -103,6 +103,23 @@ const createInput = (id, parentClass, labelText, bigId) => {
   input.setAttribute("id", id);
 };
 
+const textArea = (id, parentClass, labelText, bigId) => {
+  const parent = document.querySelector(parentClass);
+  const newDiv = document.createElement("div");
+  newDiv.classList.add("form-input");
+  newDiv.setAttribute("id", bigId);
+  parent.appendChild(newDiv);
+
+  const label = document.createElement("label");
+  label.setAttribute("for", id);
+  label.textContent = labelText;
+  newDiv.appendChild(label);
+
+  const input = document.createElement("textarea");
+  newDiv.appendChild(input);
+  input.setAttribute("id", id);
+};
+
 const colorButton = (button, other, other2) => {
   const highlight = document.querySelector(button);
   const remove = document.querySelector(other);
@@ -123,4 +140,5 @@ export {
   createImg,
   colorButton,
   createForm,
+  textArea,
 };

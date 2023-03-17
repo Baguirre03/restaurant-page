@@ -5,6 +5,8 @@ import {
   createForm,
   createLabel,
   createImg,
+  textArea,
+  createButton,
 } from "./basicFunctions";
 
 //syntax: (Text, parentClass, className)
@@ -16,10 +18,9 @@ const renderContact = () => {
   backgroundContainer.classList.add("contact-container");
 
   createChildren("", ".main-container", "contact-holder");
-  // createImg("/src/imgs/jason-leem.jpg", ".main-container", "side-image");
   createChildren("Contact Ben's Coffee!", ".contact-holder", "contact-header");
   createChildren(
-    "Lets get this conversation started. Tell us a bit about  yourself and we`ll get in touch as soon as we can.",
+    "Lets get this conversation started. Tell us a bit about  yourself and we'll get in touch as soon as we can.",
     ".contact-holder",
     "contact-text"
   );
@@ -32,7 +33,9 @@ const renderContact = () => {
 
   createInput("email", ".form", "Email: ", "email-holder");
 
-  createInput("message", ".form", "Message: ", "message-holder");
+  textArea("message", ".form", "Message: ", "message-holder");
+
+  createButton("Submit", ".form", "submit");
 };
 
 export default renderContact;

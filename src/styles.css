@@ -217,7 +217,7 @@ button:hover {
 form {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 3fr;
+  grid-template-rows: 1fr 1fr 3fr 1fr;
   column-gap: 20px;
   width: 30vw;
   height: 100%;
@@ -237,6 +237,7 @@ input {
   width: 100%;
   border-radius: 1vh;
   padding: 3px;
+  border: black 2px solid;
 }
 
 input:focus {
@@ -244,10 +245,16 @@ input:focus {
 }
 
 #message {
+  resize: none;
   height: 100%;
+  border-radius: 1vh;
+  width: 100%;
+  padding: 3px;
+  border: black 2px solid;
 }
 
-#email {
+#message:focus {
+  outline: none;
 }
 
 #email-holder {
@@ -258,8 +265,56 @@ input:focus {
   grid-column: span 2;
 }
 
+.submit {
+  margin-top: 1vh;
+  grid-column: span 2;
+  background-color: var(--lightestGrey);
+  border: 2px solid black;
+}
+
+.submit:hover {
+  color: var(--lightestGrey);
+  background-color: var(--darkGreen);
+}
+
 @media screen and (max-width: 560px) {
   .coffeeLogo {
     visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 1211px) {
+  .contact-header {
+    font-size: 1.7rem;
+  }
+  .contact-text {
+    font-size: 1.1rem;
+  }
+
+  .contact-holder {
+    height: fit-content;
+    margin-bottom: 2vh;
+  }
+  form {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    height: max-content;
+    gap: 1px;
+  }
+
+  #email-holder {
+    grid-column: span 1;
+  }
+
+  #message {
+    height: 100%;
+  }
+
+  #message-holder {
+    grid-column: span 1;
+  }
+
+  .submit {
+    grid-column: span 1;
   }
 }
