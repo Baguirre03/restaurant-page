@@ -4,6 +4,7 @@ import {
   createButton,
   createImg,
 } from "./basicFunctions";
+import "./imgs/coffee-outline.svg";
 
 const createHeader = () => {
   // HTML class main-container on page
