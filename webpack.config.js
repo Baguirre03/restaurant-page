@@ -12,7 +12,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Ben's Coffee",
+      title: "Ben's Coffee Shop",
     }),
   ],
   output: {
@@ -29,6 +29,10 @@ module.exports = {
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: "asset/resource",
+      },
+      {
+        test: /\.svg$/,
+        use: "asset/resource",
       },
     ],
   },
