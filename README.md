@@ -7,6 +7,7 @@
 
 ### About the project
 
+[Link to project](https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page)
 For this project I was tasked with the change to practice DOM manipulation by dynamically rendering a restaurant homepage! I was enabled to only use JavaScript to generate the entire contents of the website by using Webpack and Modules for separation and functionality of each pages!
 
 ### Objectives
