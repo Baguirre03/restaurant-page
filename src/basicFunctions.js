@@ -66,7 +66,7 @@ const createFoodItem = (name, foodDescription, parentClass, imageLink) => {
   foodContainer.appendChild(food);
 
   const foodImage = document.createElement("img");
-  foodImage.src = imageLink;
+  foodImage.src = `${imageLink}`;
   foodImage.classList.add("food-image");
 
   foodContainer.appendChild(foodImage);
