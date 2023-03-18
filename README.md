@@ -29,3 +29,4 @@ For this project I was tasked with the change to practice DOM manipulation by dy
 
 - Homepage background image: by [Nathan Dunlao](https://unsplash.com/@nate_dumlao)
 - Contact background image: by [Jason Leem](https://unsplash.com/@jleeems)
+- Coffee Images Created with: [Dall-e](https://openai.com/blog/dall-e-now-available-without-waitlist)
