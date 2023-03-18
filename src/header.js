@@ -4,7 +4,7 @@ import {
   createButton,
   createImg,
 } from "./basicFunctions";
-import "./imgs/coffee-outline.svg";
+import coffee from "./imgs/coffee-outline.svg";
 
 const createHeader = () => {
   // HTML class main-container on page
@@ -13,7 +13,7 @@ const createHeader = () => {
   // syntax: createBlank(text, parentClass, className)
   createChildren("", ".header-container", "header");
   createChildren("Bens Super Cool Coffee shop", ".header", "name");
-  createImg("/src/imgs/coffee-outline.svg", ".name", "coffeeLogo");
+  createImg(coffee, ".name", "coffeeLogo");
 
   createChildren("", ".header", "button-holder");
 
