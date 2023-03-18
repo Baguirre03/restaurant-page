@@ -2,7 +2,7 @@
 
 ### Result
 
-[**Link to Page**](https://baguirre03.github.io/restaurant-page/){:target="\_blank" rel="noopener"}
+[**Link to Page**](https://baguirre03.github.io/restaurant-page/){:target="blank" rel="noopener"}
 ![Alt text](./src//imgs/preview.png?raw=true "Preview")
 
 ### About the project
