@@ -24,6 +24,7 @@ For this project I was tasked with the change to practice DOM manipulation by dy
 - This project was the first time using modules, with that being said the approach took a little bit of learning but I understand the functionality of it much more!
 - With that, my BasicFunctions.js had a little **too** many functions in it. If I could go back I would create one or two, and have those be able to dynamically change which element is being created.
 - I also learned how to add CSS and images with webpack rather than just JS. With some speedbumps I was able to get the project fully stylized with a simple green color scheme which I am pretty proud of!
+- Less DIVS! I almost used completely divs for my HTML on this project and makes accessibility _way_ harder. In the future definitely will work on that.
 
 ### Credits
 
